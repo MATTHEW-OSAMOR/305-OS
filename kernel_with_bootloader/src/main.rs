@@ -161,6 +161,10 @@ fn my_entry_point(boot_info: &'static mut bootloader_api::BootInfo) -> ! {
     println!("\nString entered is '{}'", input);
 
 
+let returned_input = input_str!(" testing my input string macro");
+println!("\nYour string is'{}'",returned_input);
+
+
     // invoke a breakpoint exception for test
     //x86_64::instructions::interrupts::int3();
 
